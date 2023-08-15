@@ -1,10 +1,3 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #ifndef HAYVAN_H
 #define HAYVAN_H
 
@@ -16,16 +9,16 @@ protected:
     string tur;
     int yas;
 public:
-    Hayvan(const string &ad, const string &tur, int yas);// Hayvan sınıfının yapıcı işlevi. Ad, tür ve yaş değerlerini parametre olarak alır.
-    virtual ~Hayvan() = default;// Sanal yıkıcı işlev, türetilmiş sınıfların düzgün bir şekilde bellekten serbest bırakılmasını sağlar.
+    Hayvan(const string &ad, const string &tur, int yas);// Hayvan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ± iÅŸlevi. Ad, tÃ¼r ve yaÅŸ deÄŸerlerini parametre olarak alÄ±r.
+    virtual ~Hayvan() = default;// Sanal yÄ±kÄ±cÄ± iÅŸlev, tÃ¼retilmiÅŸ sÄ±nÄ±flarÄ±n dÃ¼zgÃ¼n bir ÅŸekilde bellekten serbest bÄ±rakÄ±lmasÄ±nÄ± saÄŸlar.
 
-    const string &getAd() const; // Hayvanın adını döndüren bir işlev.
-    const string &getTur() const; // Hayvanın türünü döndüren bir işlev.
-    int getYas() const;// Hayvanın yaşını döndüren bir işlev.
+    const string &getAd() const; // HayvanÄ±n adÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
+    const string &getTur() const; // HayvanÄ±n tÃ¼rÃ¼nÃ¼ dÃ¶ndÃ¼ren bir iÅŸlev.
+    int getYas() const;// HayvanÄ±n yaÅŸÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
 
-    void setAd(const string &ad);// Hayvanın adını ayarlayan bir işlev.
-    void setTur(const string &tur);// Hayvanın türünü ayarlayan bir işlev.
-    void setYas(int yas);// Hayvanın yaşını ayarlayan bir işlev.
+    void setAd(const string &ad);// HayvanÄ±n adÄ±nÄ± ayarlayan bir iÅŸlev.
+    void setTur(const string &tur);// HayvanÄ±n tÃ¼rÃ¼nÃ¼ ayarlayan bir iÅŸlev.
+    void setYas(int yas);// HayvanÄ±n yaÅŸÄ±nÄ± ayarlayan bir iÅŸlev.
 };
 
 #endif //HAYVAN_H
