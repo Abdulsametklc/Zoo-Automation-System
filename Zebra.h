@@ -1,10 +1,3 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #ifndef ZEBRA_H
 #define ZEBRA_H
 
@@ -15,12 +8,12 @@ class Zebra: public Hayvan {
 private:
     double uzunluk;
 public:
-    Zebra(const string &ad, const std::string &tur, int yas, double uzunluk);// Zebra sınıfının yapıcısı
+    Zebra(const string &ad, const std::string &tur, int yas, double uzunluk);// Zebra sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ±sÄ±
     ~Zebra() override = default;
 
-    double getUzunluk() const;// uzunluk (length) değerini döndüren işlev
-    void setUzunluk(double uzunluk);// uzunluk (length) değerini belirleyen işlev
-    void setYas(int newYas); // yeni yaş değerini belirleyen işlev
+    double getUzunluk() const;// uzunluk (length) deÄŸerini dÃ¶ndÃ¼ren iÅŸlev
+    void setUzunluk(double uzunluk);// uzunluk (length) deÄŸerini belirleyen iÅŸlev
+    void setYas(int newYas); // yeni yaÅŸ deÄŸerini belirleyen iÅŸlev
 
 
 #endif //ZEBRA_H
