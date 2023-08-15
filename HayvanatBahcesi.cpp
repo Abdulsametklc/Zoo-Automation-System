@@ -1,34 +1,27 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #include "HayvanatBahcesi.h"
 #include "Aslan.h"
 #include "Zebra.h"
 #include "Kartal.h"
 #include <iostream>
 using namespace std;
-void HayvanatBahcesi::hayvanEkle(Hayvan* hayvan) {// Hayvanı hayvanlar vektörüne ekleyen bir işlev.
+void HayvanatBahcesi::hayvanEkle(Hayvan* hayvan) {// HayvanÄ± hayvanlar vektÃ¶rÃ¼ne ekleyen bir iÅŸlev.
     hayvanlar.push_back(hayvan);
 }
 
-void HayvanatBahcesi::hayvanlariGoster() const { // Hayvanları ekrana gösteren bir işlev.
+void HayvanatBahcesi::hayvanlariGoster() const { // HayvanlarÄ± ekrana gÃ¶steren bir iÅŸlev.
     for (const auto &hayvan : hayvanlar) {
-        cout << "\nAd: " << hayvan->getAd() << "\nTür: " << hayvan->getTur() << "\nYaş: " << hayvan->getYas() << endl;
+        cout << "\nAd: " << hayvan->getAd() << "\nTÃ¼r: " << hayvan->getTur() << "\nYaÅŸ: " << hayvan->getYas() << endl;
     }
 }
 
-void HayvanatBahcesi::hayvanBesle(const string &hayvanAdi) { // Belirli bir hayvanı besleyen bir işlev.
+void HayvanatBahcesi::hayvanBesle(const string &hayvanAdi) { // Belirli bir hayvanÄ± besleyen bir iÅŸlev.
     for (const auto &hayvan : hayvanlar) {
         if (hayvan->getAd() == hayvanAdi) {
             if(dynamic_cast<Aslan*>(hayvan)) {
-                cout << hayvanAdi << " aslanı" << " etle beslendi." << endl;
+                cout << hayvanAdi << " aslanÄ±" << " etle beslendi." << endl;
             }
             else if(dynamic_cast<Kartal*>(hayvan)) {
-                cout << hayvanAdi << " kartalı" << " etle beslendi." << endl;
+                cout << hayvanAdi << " kartalÄ±" << " etle beslendi." << endl;
             }
             else if(dynamic_cast<Zebra*>(hayvan)) {
                 cout << hayvanAdi << " zebra" << " otla beslendi." << endl;
@@ -37,11 +30,11 @@ void HayvanatBahcesi::hayvanBesle(const string &hayvanAdi) { // Belirli bir hayv
     }
 }
 
-void HayvanatBahcesi::hayvanYasGuncelle(const string &hayvanAdi, int yas) {// Belirli bir hayvanın yaşını güncelleyen bir işlev.
+void HayvanatBahcesi::hayvanYasGuncelle(const string &hayvanAdi, int yas) {// Belirli bir hayvanÄ±n yaÅŸÄ±nÄ± gÃ¼ncelleyen bir iÅŸlev.
     for (auto &hayvan : hayvanlar) {
         if (hayvan->getAd() == hayvanAdi) {
             hayvan->setYas(yas);
-            cout << hayvanAdi << " adlı hayvanın yaş güncellendi: " << yas << endl;
+            cout << hayvanAdi << " adlÄ± hayvanÄ±n yaÅŸ gÃ¼ncellendi: " << yas << endl;
         }
     }
 }
