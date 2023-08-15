@@ -1,10 +1,3 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #ifndef KARTAL_H
 #define KARTAL_H
 
@@ -16,11 +9,11 @@ class Kartal : public Hayvan {
 private:
     int hiz;
 public:
-    Kartal(const sstring &ad, const string &tur, int yas, int hiz);// Kartal sınıfının yapıcısı, ad, tür, yaş ve hız parametrelerini alarak Kartal nesnesini başlatır.
+    Kartal(const sstring &ad, const string &tur, int yas, int hiz);// Kartal sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ±sÄ±, ad, tÃ¼r, yaÅŸ ve hÄ±z parametrelerini alarak Kartal nesnesini baÅŸlatÄ±r.
 
-    int getHiz() const;// Kartal'ın hızını döndüren bir işlev.
-    void setHiz(int newHiz);// Kartal'ın hızını ayarlayan bir işlev.
-    void setYas(int newYas); // Kartal'ın yaşını ayarlayan bir işlev.
+    int getHiz() const;// Kartal'Ä±n hÄ±zÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
+    void setHiz(int newHiz);// Kartal'Ä±n hÄ±zÄ±nÄ± ayarlayan bir iÅŸlev.
+    void setYas(int newYas); // Kartal'Ä±n yaÅŸÄ±nÄ± ayarlayan bir iÅŸlev.
 };
 
 #endif //KARTAL_H
