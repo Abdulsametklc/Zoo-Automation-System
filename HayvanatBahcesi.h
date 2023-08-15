@@ -1,10 +1,3 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #ifndef HAYVANATBAHCESI_H
 #define HAYVANATBAHCESI_H
 
@@ -13,13 +6,13 @@ Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 using namespace std;
 class HayvanatBahcesi {
 public:
-    vector<Hayvan*> hayvanlar;// Hayvanların tutulduğu bir hayvanlar vektörü.
+    vector<Hayvan*> hayvanlar;// HayvanlarÄ±n tutulduÄŸu bir hayvanlar vektÃ¶rÃ¼.
 
 
-    void hayvanEkle(Hayvan* hayvan);// Hayvanı hayvanlar vektörüne ekleyen bir işlev.
-    void hayvanlariGoster() const;// Hayvanları ekrana gösteren bir işlev.
-    void hayvanBesle(const string &hayvanAdi);// Belirli bir hayvanı besleyen bir işlev.
-    void hayvanYasGuncelle(const string &hayvanAdi, int yas); // Belirli bir hayvanın yaşını güncelleyen bir işlev.
+    void hayvanEkle(Hayvan* hayvan);// HayvanÄ± hayvanlar vektÃ¶rÃ¼ne ekleyen bir iÅŸlev.
+    void hayvanlariGoster() const;// HayvanlarÄ± ekrana gÃ¶steren bir iÅŸlev.
+    void hayvanBesle(const string &hayvanAdi);// Belirli bir hayvanÄ± besleyen bir iÅŸlev.
+    void hayvanYasGuncelle(const string &hayvanAdi, int yas); // Belirli bir hayvanÄ±n yaÅŸÄ±nÄ± gÃ¼ncelleyen bir iÅŸlev.
 };
 
 #endif //HAYVANATBAHCESI_H
