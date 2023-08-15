@@ -1,25 +1,18 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #include "Kartal.h"
 using namespace std;
 Kartal::Kartal(const string &ad, const string &tur, int yas, int hiz)
-    : Hayvan(ad, tur, yas), hiz(hiz) {}  // kanatAcikligi yerine hiz değişkenini kullandım
-// Kartal yapıcısı, Hayvan sınıfının yapıcısını çağırarak Kartal nesnesini başlatır ve hız değerini atar.
+    : Hayvan(ad, tur, yas), hiz(hiz) {}  // kanatAcikligi yerine hiz deÄŸiÅŸkenini kullandÄ±m
+// Kartal yapÄ±cÄ±sÄ±, Hayvan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ±sÄ±nÄ± Ã§aÄŸÄ±rarak Kartal nesnesini baÅŸlatÄ±r ve hÄ±z deÄŸerini atar.
 
 int Kartal::getHiz() const {
     return hiz;
-}// Kartal'ın hızını döndüren bir işlev.
+}// Kartal'Ä±n hÄ±zÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
 
 void Kartal::setHiz(int newHiz) {
     hiz = newHiz;
-}// Kartal'ın hızını belirleyen bir işlev.
+}// Kartal'Ä±n hÄ±zÄ±nÄ± belirleyen bir iÅŸlev.
 
 void Kartal::setYas(int newYas) {
     Hayvan::setYas(newYas);
-}// Kartal'ın yaşını belirleyen bir işlev. Hayvan sınıfının setYas() işlevini çağırarak yaş değerini ayarlar.
+}// Kartal'Ä±n yaÅŸÄ±nÄ± belirleyen bir iÅŸlev. Hayvan sÄ±nÄ±fÄ±nÄ±n setYas() iÅŸlevini Ã§aÄŸÄ±rarak yaÅŸ deÄŸerini ayarlar.
 
