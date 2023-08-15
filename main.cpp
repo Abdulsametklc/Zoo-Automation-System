@@ -1,32 +1,23 @@
-/*Abdulsamet 
-KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
-
 #include <clocale>
 #include <iostream>
-#include "Hayvan.h" //Hayvan sınıfının başlık dosyası
-#include "Aslan.h" //Aslan sınıfının başlık dosyası
-#include "Zebra.h" //Zebra sınıfının başlık dosyası
-#include "Kartal.h" //Kartal sınıfının başlık dosyası
-#include "HayvanatBahcesi.h" //Hayvanat Bahçesi sınıfının başlık dosyası
-#include "Hayvan.cpp" //Hayvan sınıfının kaynak dosyası
-#include "Aslan.cpp" //Aslan sınıfının kaynak dosyası
-#include "Zebra.cpp" //Zebra sınıfının kaynak dosyası
-#include "Kartal.cpp" //Kartal sınıfının kaynak dosyası
-#include "HayvanatBahcesi.cpp" //Hayvanat Bahçesi sınıfının kaynak dosyası
+#include "Hayvan.h" //Hayvan sÄ±nÄ±fÄ±nÄ±n baÅŸlÄ±k dosyasÄ±
+#include "Aslan.h" //Aslan sÄ±nÄ±fÄ±nÄ±n baÅŸlÄ±k dosyasÄ±
+#include "Zebra.h" //Zebra sÄ±nÄ±fÄ±nÄ±n baÅŸlÄ±k dosyasÄ±
+#include "Kartal.h" //Kartal sÄ±nÄ±fÄ±nÄ±n baÅŸlÄ±k dosyasÄ±
+#include "HayvanatBahcesi.h" //Hayvanat BahÃ§esi sÄ±nÄ±fÄ±nÄ±n baÅŸlÄ±k dosyasÄ±
+#include "Hayvan.cpp" //Hayvan sÄ±nÄ±fÄ±nÄ±n kaynak dosyasÄ±
+#include "Aslan.cpp" //Aslan sÄ±nÄ±fÄ±nÄ±n kaynak dosyasÄ±
+#include "Zebra.cpp" //Zebra sÄ±nÄ±fÄ±nÄ±n kaynak dosyasÄ±
+#include "Kartal.cpp" //Kartal sÄ±nÄ±fÄ±nÄ±n kaynak dosyasÄ±
+#include "HayvanatBahcesi.cpp" //Hayvanat BahÃ§esi sÄ±nÄ±fÄ±nÄ±n kaynak dosyasÄ±
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Turkish"); //fonskiyonu kullanarak Türkçe dil ayarını yapar.
+    setlocale(LC_ALL, "Turkish"); //fonskiyonu kullanarak TÃ¼rkÃ§e dil ayarÄ±nÄ± yapar.
     
-    Hayvan *aslan1 = new Aslan("Simba", "Aslan", 5, "Kahverengi"); // Hayvan(aslan, zebra ve kartal) sınıflarından örnek nesneler oluşturuyor.
-    Hayvan *aslan2 = new Aslan("Mufasa", "Aslan", 7, "Sarı");
+    Hayvan *aslan1 = new Aslan("Simba", "Aslan", 5, "Kahverengi"); // Hayvan(aslan, zebra ve kartal) sÄ±nÄ±flarÄ±ndan Ã¶rnek nesneler oluÅŸturuyor.
+    Hayvan *aslan2 = new Aslan("Mufasa", "Aslan", 7, "SarÄ±");
     Hayvan *aslan3 = new Aslan("Zula", "Aslan",10,"Siyah");
     Hayvan *zebra1 = new Zebra("Marty", "Zebra", 3, 170);
     Hayvan *zebra2 = new Zebra("Alex", "Zebra", 4, 175);
@@ -34,9 +25,9 @@ int main() {
     Hayvan *kartal1 = new Kartal("Eagle", "Kartal", 2, 40);
     Hayvan *kartal2 = new Kartal("Hawk", "Kartal", 3, 45);
     Hayvan *kartal3 = new Kartal("George", "Kartal", 4, 55);    
-	HayvanatBahcesi hayvanatBahcesi; //Hayvanat bahçesi sınıfında nesne oluşturuyor.
+	HayvanatBahcesi hayvanatBahcesi; //Hayvanat bahÃ§esi sÄ±nÄ±fÄ±nda nesne oluÅŸturuyor.
 	
-	hayvanatBahcesi.hayvanEkle(aslan1); //Hayvanları hayvanat bahçesine eklemek için hayvanEkle() yöntemi çağrılıyor.
+	hayvanatBahcesi.hayvanEkle(aslan1); //HayvanlarÄ± hayvanat bahÃ§esine eklemek iÃ§in hayvanEkle() yÃ¶ntemi Ã§aÄŸrÄ±lÄ±yor.
     hayvanatBahcesi.hayvanEkle(aslan2);
     hayvanatBahcesi.hayvanEkle(aslan3);
     hayvanatBahcesi.hayvanEkle(zebra1);
@@ -46,15 +37,15 @@ int main() {
     hayvanatBahcesi.hayvanEkle(kartal2);
     hayvanatBahcesi.hayvanEkle(kartal3);
 
-    int secim; // Kullanıcının seçim yapması için do-while yapısı kullanıldı. Menü seçimi için switch-case yapısı kullanıldı.
-    do { //Kullanıcıya menü gösteriliyor.
-        cout << "----Hayvanat Bahçesi Menüsü----\n";
+    int secim; // KullanÄ±cÄ±nÄ±n seÃ§im yapmasÄ± iÃ§in do-while yapÄ±sÄ± kullanÄ±ldÄ±. MenÃ¼ seÃ§imi iÃ§in switch-case yapÄ±sÄ± kullanÄ±ldÄ±.
+    do { //KullanÄ±cÄ±ya menÃ¼ gÃ¶steriliyor.
+        cout << "----Hayvanat BahÃ§esi MenÃ¼sÃ¼----\n";
         cout << "1. Yeni Hayvan Ekle\n";
-        cout << "2. Tüm Hayvanları Göster\n";
+        cout << "2. TÃ¼m HayvanlarÄ± GÃ¶ster\n";
         cout << "3. Hayvan Besle\n";
-        cout << "4. Hayvanın Bilgilerini güncelle\n";
-        cout << "5. Çıkış\n";
-        cout << "Seçiminizi yapınız: ";
+        cout << "4. HayvanÄ±n Bilgilerini gÃ¼ncelle\n";
+        cout << "5. Ã‡Ä±kÄ±ÅŸ\n";
+        cout << "SeÃ§iminizi yapÄ±nÄ±z: ";
         cin >> secim;
 
         switch(secim) {
@@ -66,53 +57,53 @@ int main() {
                 int uzunluk;
                 int hiz;
 
-				cout << "Hayvanın adını giriniz: ";
+				cout << "HayvanÄ±n adÄ±nÄ± giriniz: ";
                 cin >> ad;
 
-                cout << "Eklenecek hayvanın tipini seçiniz (1-Aslan, 2-Zebra, 3-Kartal): ";
+                cout << "Eklenecek hayvanÄ±n tipini seÃ§iniz (1-Aslan, 2-Zebra, 3-Kartal): ";
                 cin >> hayvanTipi;
-                //Kullanıcı tarafından seçilen hayvan tipine göre ilgili sınıftan nesne oluşturuluyor.
+                //KullanÄ±cÄ± tarafÄ±ndan seÃ§ilen hayvan tipine gÃ¶re ilgili sÄ±nÄ±ftan nesne oluÅŸturuluyor.
                 if(hayvanTipi == "Aslan" || hayvanTipi == "aslan")
                 {
-                	cout << "Hayvanın yaşını giriniz: ";
+                	cout << "HayvanÄ±n yaÅŸÄ±nÄ± giriniz: ";
                 	cin >> yas;
-					cout << "Aslanın rengini giriniz: ";
+					cout << "AslanÄ±n rengini giriniz: ";
                     cin >> renk;
                     hayvanatBahcesi.hayvanEkle(new Aslan(ad, "Aslan", yas, renk));
-					cout<<"Hayvan ekleme başarılı"<<endl;	
+					cout<<"Hayvan ekleme baÅŸarÄ±lÄ±"<<endl;	
 				}
 				else if(hayvanTipi == "Zebra" || hayvanTipi == "zebra")
 				{
-					cout << "Hayvanın yaşını giriniz: ";
+					cout << "HayvanÄ±n yaÅŸÄ±nÄ± giriniz: ";
                 	cin >> yas;
-					cout << "Zebra'nın uzunluğunu(cm cinsinden) giriniz: ";
+					cout << "Zebra'nÄ±n uzunluÄŸunu(cm cinsinden) giriniz: ";
                     cin >> uzunluk;
                     hayvanatBahcesi.hayvanEkle(new Zebra(ad, "Zebra", yas, uzunluk));
-                    cout<<"Hayvan ekleme başarılı"<<endl;
+                    cout<<"Hayvan ekleme baÅŸarÄ±lÄ±"<<endl;
 				}
 				else if(hayvanTipi == "Kartal" || hayvanTipi == "kartal")
 				{
-					cout << "Hayvanın yaşını giriniz: ";
+					cout << "HayvanÄ±n yaÅŸÄ±nÄ± giriniz: ";
                 	cin >> yas;
-					cout << "Kartalın hızını giriniz: ";
+					cout << "KartalÄ±n hÄ±zÄ±nÄ± giriniz: ";
                     cin >> hiz;
                     hayvanatBahcesi.hayvanEkle(new Kartal(ad, "Kartal", yas, hiz));	
-                    cout<<"Hayvan ekleme başarılı"<<endl;
+                    cout<<"Hayvan ekleme baÅŸarÄ±lÄ±"<<endl;
 				}
 				else
 				{
-					cout << "Hatalı seçim!\n Tekrar menüye dönüyorsunuz..." << endl;
+					cout << "HatalÄ± seÃ§im!\n Tekrar menÃ¼ye dÃ¶nÃ¼yorsunuz..." << endl;
 				}
 				break;
             }
             case 2:
-                hayvanatBahcesi.hayvanlariGoster(); // Tüm hayvanları göstermek için hayvanlariGoster() yöntemi çağrılıyor.
+                hayvanatBahcesi.hayvanlariGoster(); // TÃ¼m hayvanlarÄ± gÃ¶stermek iÃ§in hayvanlariGoster() yÃ¶ntemi Ã§aÄŸrÄ±lÄ±yor.
                 break;
             case 3: {
                 string ad;
-                cout << "Beslenecek hayvanın adını giriniz: ";
+                cout << "Beslenecek hayvanÄ±n adÄ±nÄ± giriniz: ";
                 cin >> ad;
-                hayvanatBahcesi.hayvanBesle(ad); // Belirtilen hayvanı beslemek için hayvanBesle() yöntemi çağrılıyor.
+                hayvanatBahcesi.hayvanBesle(ad); // Belirtilen hayvanÄ± beslemek iÃ§in hayvanBesle() yÃ¶ntemi Ã§aÄŸrÄ±lÄ±yor.
                 break;
             }
             case 4: {
@@ -123,60 +114,60 @@ int main() {
 				double uzunluk;
 				int hiz;
 				
-				cout << "Özellikleri güncellenecek hayvanın adını giriniz: ";
+				cout << "Ã–zellikleri gÃ¼ncellenecek hayvanÄ±n adÄ±nÄ± giriniz: ";
 				cin >> ad;
 				
-				cout << "Hayvanın türünü seçiniz (1-Aslan, 2-Zebra, 3-Kartal): ";
+				cout << "HayvanÄ±n tÃ¼rÃ¼nÃ¼ seÃ§iniz (1-Aslan, 2-Zebra, 3-Kartal): ";
 				cin >> tur;
 			
-				cout << "Hayvanın yeni yaşını giriniz: ";
+				cout << "HayvanÄ±n yeni yaÅŸÄ±nÄ± giriniz: ";
 				cin >> yas;
-			    // Kullanıcının seçtiği hayvan türüne göre ilgili özellikler güncelleniyor.
+			    // KullanÄ±cÄ±nÄ±n seÃ§tiÄŸi hayvan tÃ¼rÃ¼ne gÃ¶re ilgili Ã¶zellikler gÃ¼ncelleniyor.
 				if(tur == "Aslan" || tur == "aslan") {
-					cout << "Aslanın yeni rengini giriniz: ";
+					cout << "AslanÄ±n yeni rengini giriniz: ";
 					cin >> renk;
 					for(auto &hayvan : hayvanatBahcesi.hayvanlar) {
 						if(hayvan->getAd() == ad && dynamic_cast<Aslan*>(hayvan)) {
 							dynamic_cast<Aslan*>(hayvan)->setRenk(renk);
 							dynamic_cast<Aslan*>(hayvan)->setYas(yas);
-							cout << "Aslanın rengi ve yaşı güncellendi." << endl;
+							cout << "AslanÄ±n rengi ve yaÅŸÄ± gÃ¼ncellendi." << endl;
 						}
 					}
 				} 
 				else if(tur == "Zebra" || tur == "zebra") {
-					cout << "Zebra'nın yeni uzunluğunu giriniz: ";
+					cout << "Zebra'nÄ±n yeni uzunluÄŸunu giriniz: ";
 					cin >> uzunluk;
 					for(auto &hayvan : hayvanatBahcesi.hayvanlar) {
 						if(hayvan->getAd() == ad && dynamic_cast<Zebra*>(hayvan)) {
 							dynamic_cast<Zebra*>(hayvan)->setUzunluk(uzunluk);
 							dynamic_cast<Zebra*>(hayvan)->setYas(yas);
-							cout << "Zebra'nın uzunluğu ve yaşı güncellendi." << endl;
+							cout << "Zebra'nÄ±n uzunluÄŸu ve yaÅŸÄ± gÃ¼ncellendi." << endl;
 						}
 					}
 				}	 
 				else if(tur == "Kartal" || tur == "kartal") {
-					cout << "Kartalın yeni hızını giriniz: ";
+					cout << "KartalÄ±n yeni hÄ±zÄ±nÄ± giriniz: ";
 					cin >> hiz;
 					for(auto &hayvan : hayvanatBahcesi.hayvanlar) {
 						if(hayvan->getAd() == ad && dynamic_cast<Kartal*>(hayvan)) {
 							dynamic_cast<Kartal*>(hayvan)->setHiz(hiz);
 							dynamic_cast<Kartal*>(hayvan)->setYas(yas);
-							cout << "Kartalın hızı ve yaşı güncellendi." << endl;
+							cout << "KartalÄ±n hÄ±zÄ± ve yaÅŸÄ± gÃ¼ncellendi." << endl;
 						}
 					}
 				} 
 				else {
-					cout << "Hatalı seçim!" << endl;
+					cout << "HatalÄ± seÃ§im!" << endl;
 				}
 				break; 
 			}
-            case 5: // Programdam çıkış yapar.
-                cout << "Programdan çıkılıyor...";
+            case 5: // Programdam Ã§Ä±kÄ±ÅŸ yapar.
+                cout << "Programdan Ã§Ä±kÄ±lÄ±yor...";
                 break;
 			default:
-                cout << "Hatalı seçim!" << endl;
+                cout << "HatalÄ± seÃ§im!" << endl;
         }
-    } while(secim != 5); // Do-while yapısı kullanılarak 1-5 arası dışında seçilen seçimleri kabul etmeiyor ve memü tekrar kullanıcıya veriliyor.
+    } while(secim != 5); // Do-while yapÄ±sÄ± kullanÄ±larak 1-5 arasÄ± dÄ±ÅŸÄ±nda seÃ§ilen seÃ§imleri kabul etmeiyor ve memÃ¼ tekrar kullanÄ±cÄ±ya veriliyor.
 
     return 0;
 }
