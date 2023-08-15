@@ -1,10 +1,3 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #ifndef ASLAN_H
 #define ASLAN_H
 
@@ -15,11 +8,11 @@ class Aslan : public Hayvan {
 private:
     string renk;
 public:
-    Aslan(const string &ad, const string &tur, int yas, const string &renk);// Aslan sınıfının yapıcı işlevi. Ad, tür, yaş ve renk değerlerini parametre olarak alır.
+    Aslan(const string &ad, const string &tur, int yas, const string &renk);// Aslan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ± iÅŸlevi. Ad, tÃ¼r, yaÅŸ ve renk deÄŸerlerini parametre olarak alÄ±r.
 
-    const string &getRenk() const;// Aslanın renk değerini döndüren bir işlev.
-    void setRenk(const string &newRenk);// Aslanın renk değerini ayarlayan bir işlev.
-    void setYas(int newYas); // Aslanın yaş değerini ayarlayan bir işlev. Hayvan sınıfından gelen setYas işlevini ezme (override) işlemi yapar.
+    const string &getRenk() const;// AslanÄ±n renk deÄŸerini dÃ¶ndÃ¼ren bir iÅŸlev.
+    void setRenk(const string &newRenk);// AslanÄ±n renk deÄŸerini ayarlayan bir iÅŸlev.
+    void setYas(int newYas); // AslanÄ±n yaÅŸ deÄŸerini ayarlayan bir iÅŸlev. Hayvan sÄ±nÄ±fÄ±ndan gelen setYas iÅŸlevini ezme (override) iÅŸlemi yapar.
 };
 
 #endif //ASLAN_H
