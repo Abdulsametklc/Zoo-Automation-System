@@ -1,25 +1,18 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #include "Aslan.h"
 using namespace std;
 
 Aslan::Aslan(const string &ad, const string &tur, int yas, const string &renk)
-    : Hayvan(ad, tur, yas), renk(renk) {}// Aslan sınıfının yapıcı işlevi. Hayvan sınıfının yapıcı işlevini çağırır ve renk değişkenini ayarlar.
+    : Hayvan(ad, tur, yas), renk(renk) {}// Aslan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ± iÅŸlevi. Hayvan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ± iÅŸlevini Ã§aÄŸÄ±rÄ±r ve renk deÄŸiÅŸkenini ayarlar.
 
 const string &Aslan::getRenk() const {
     return renk;
-}// Aslanın renk değerini döndüren bir işlev.
+}// AslanÄ±n renk deÄŸerini dÃ¶ndÃ¼ren bir iÅŸlev.
 
 void Aslan::setRenk(const string &newRenk) {
     renk = newRenk;
-}// Aslanın renk değerini ayarlayan bir işlev.
+}// AslanÄ±n renk deÄŸerini ayarlayan bir iÅŸlev.
 
 void Aslan::setYas(int newYas) {
     Hayvan::setYas(newYas); 
-}// Aslanın yaş değerini ayarlayan bir işlev. Hayvan sınıfının setYas işlevini çağırır.
+}// AslanÄ±n yaÅŸ deÄŸerini ayarlayan bir iÅŸlev. Hayvan sÄ±nÄ±fÄ±nÄ±n setYas iÅŸlevini Ã§aÄŸÄ±rÄ±r.
 
