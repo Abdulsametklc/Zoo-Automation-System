@@ -1,36 +1,29 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #include "Hayvan.h"
 using namespace std;
 Hayvan::Hayvan(const string &ad, const string &tur, int yas)
-    : ad(ad), tur(tur), yas(yas) {}// Hayvan sınıfının yapıcı işlevi. Ad, tür ve yaş değerlerini parametre olarak alır.
+    : ad(ad), tur(tur), yas(yas) {}// Hayvan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ± iÅŸlevi. Ad, tÃ¼r ve yaÅŸ deÄŸerlerini parametre olarak alÄ±r.
 
 const string &Hayvan::getAd() const {
     return ad;
-}// Hayvanın adını döndüren bir işlev.
+}// HayvanÄ±n adÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
 
 const string &Hayvan::getTur() const {
     return tur;
-}// Hayvanın türünü döndüren bir işlev.
+}// HayvanÄ±n tÃ¼rÃ¼nÃ¼ dÃ¶ndÃ¼ren bir iÅŸlev.
 
 int Hayvan::getYas() const {
     return yas;
-}// Hayvanın yaşını döndüren bir işlev.
+}// HayvanÄ±n yaÅŸÄ±nÄ± dÃ¶ndÃ¼ren bir iÅŸlev.
 
 void Hayvan::setAd(const string &newAd) {
     ad = newAd;
-}// Hayvanın adını ayarlayan bir işlev.
+}// HayvanÄ±n adÄ±nÄ± ayarlayan bir iÅŸlev.
 
 void Hayvan::setTur(const string &newTur) {
     tur = newTur;
-}// Hayvanın türünü ayarlayan bir işlev.
+}// HayvanÄ±n tÃ¼rÃ¼nÃ¼ ayarlayan bir iÅŸlev.
 
 void Hayvan::setYas(int newYas) {
     yas = newYas;
-}// Hayvanın yaşını ayarlayan bir işlev.
+}// HayvanÄ±n yaÅŸÄ±nÄ± ayarlayan bir iÅŸlev.
 
