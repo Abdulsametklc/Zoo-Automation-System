@@ -1,25 +1,18 @@
-/*Abdulsamet KILIÇ
-220707120
-Bilgisayar Mühendisliği (Örgün Öğretim)
-Nesneye Yönelik Programlama - MBM104-A
-2022-2023 Bahar Dönemi
-Programlama Projesi 1
-Dr. Öğr. Üyesi Ahmet Coşkunçay*/
 #include "Zebra.h"
 using namespace std;
 Zebra::Zebra(const string &ad, const string &tur, int yas, double uzunluk)
     : Hayvan(ad, tur, yas), uzunluk(uzunluk) {} 
-// Zebra yapıcısı, Hayvan sınıfının yapıcısını çağırarak Zebra nesnesini başlatır ve uzunluk değerini atar.
+// Zebra yapÄ±cÄ±sÄ±, Hayvan sÄ±nÄ±fÄ±nÄ±n yapÄ±cÄ±sÄ±nÄ± Ã§aÄŸÄ±rarak Zebra nesnesini baÅŸlatÄ±r ve uzunluk deÄŸerini atar.
 
 double Zebra::getUzunluk() const {
     return uzunluk;
-}// Zebra'nın uzunluğunu döndüren bir işlev.
+}// Zebra'nÄ±n uzunluÄŸunu dÃ¶ndÃ¼ren bir iÅŸlev.
 
 void Zebra::setUzunluk(double newUzunluk) {
     uzunluk = newUzunluk;
-}// Zebra'nın uzunluğunu belirleyen bir işlev.
+}// Zebra'nÄ±n uzunluÄŸunu belirleyen bir iÅŸlev.
 
 void Zebra::setYas(int newYas) {
     Hayvan::setYas(newYas);
-}// Zebra'nın yaşını belirleyen bir işlev. Hayvan sınıfının setYas() işlevini çağırarak yaş değerini ayarlar.
+}// Zebra'nÄ±n yaÅŸÄ±nÄ± belirleyen bir iÅŸlev. Hayvan sÄ±nÄ±fÄ±nÄ±n setYas() iÅŸlevini Ã§aÄŸÄ±rarak yaÅŸ deÄŸerini ayarlar.
 
